@@ -213,7 +213,7 @@ int main() {
 }
 ```
 #### Output:
-![screenshot output unguided1](output_unguided1_iqbalb.png)
+![screenshot output unguided1](output_ungiuded1_iqbalb.png)
 
 Kode di atas adalah Program ini adalah kalkulator sederhana untuk menghitung luas segitiga atau luas persegi berdasarkan pilihan pengguna.Program akan meminta pengguna memilih operasi yang ingin dilakukan melalui fungsi tampilanmenu_130. Menu ditampilkan dengan pilihan antara menghitung luas segitiga (pilihan 'a') atau luas persegi (pilihan 'b'). Pengguna diminta untuk memasukkan huruf 'a' atau 'b', yang kemudian disimpan dalam variabel hurufkoma_130. Setelah memilih operasi, program menggunakan struktur kontrol switch untuk mengevaluasi pilihan pengguna. Jika pengguna memilih 'a', fungsi hitungluassegitiga_130 dipanggil untuk meminta masukan alas dan tinggi segitiga, dan menghitung luas segitiga menggunakan rumus 0.5 * alas * tinggi. Hasilnya kemudian ditampilkan. Jika pengguna memilih 'b', fungsi hitungluaspersegi_130 dipanggil untuk meminta masukan panjang sisi persegi, dan menghitung luas persegi dengan mengalikan panjang sisi dengan dirinya sendiri. Hasilnya juga ditampilkan. Dari kode diatas terdapat 2 fungsi dan dua tipe data primitiv yaitu float dan char
 
@@ -316,11 +316,11 @@ int main() {
 Kode ini merupakan contoh penerapan  struktur data MAP untuk menampilkan informasi calon DPR. struck Calon DPR mendifinisikan  struktur CalonDPR yang memiliki 2string untuk menyimpan nama dan partai. map int, CalonDPR calonDPR_2130;: Mendeklarasikan objek map dengan key berupa integer dan value berupa objek CalonDPR. Nama objek map ini adalah calonDPR_2130.lalu Menambahkan data calon DPR ke dalam map menggunakan calonDPR_2130[key] = nama, partai, dan menggunakan perulangan for untuk menampilkan data yang ada di mapnya.
 
 
-Perbedaan arrat dengan map:
--ukuran map dapat did deklarasikan dengan ukuran yang dinamis, sedangkan array harus di deklarasikan dengan ukuran yang tetap
+Perbedaan array dengan map:
+
+-ukuran map dapat did deklarasikan dengan ukuran yang dinamis, sedangkan array harus di deklarasikan dengan ukuran yang tetap.
 -kecepatan akses elemen map memerlukan waktu yang lebih lama karena melibatkan pencarian berdasarkan kaca kunci, sedangkan array lebih cepat karena melalui indeks.
--penyusunan data map berdasar kata kunci, sedangkan array indeks,
-untuk mencari elemen map dengan kata kunci, sedangkan array denagn numerik 0(untuk rlrmrn pertama)
+-penyusunan data map berdasar kata kunci, sedangkan array indeks, untuk mencari elemen map dengan kata kunci, sedangkan array denagn    numerik 0(untuk rlrmrn pertama)
 -map bisa memiliki tipe data yang berbeda sedangkan array tidak.
 
 
