@@ -443,9 +443,14 @@ Kode diatas adalah implementasi sederhana dari double linked list dalam bahasa C
 
 ## Unguided 
 
-### 1. [Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!] (screeshot soal unguided1.png)
+### 1. Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut: 
+(soal-unguided1.png)
 
 ```C++
+// UNGUIDED 2
+// Iqbal Bawani
+// S1 IF-11-D
+// 2311102130
 #include <iostream>
 using namespace std;
 
@@ -570,9 +575,11 @@ int main() {
 #### Output:
 ![screenshot output unguided1](Screenshot unguided1.png)
 
-koe di atas sebuah program C++ yang meminta pengguna untuk memasukkan sejumlah bilangan, menyimpannya dalam sebuah array, dan kemudian memisahkan bilangan ganjil dan genap ke dalam dua array terpisah.Pertama-tama, program meminta pengguna untuk memasukkan jumlah bilangan yang akan dimasukkan. Kemudian, program menggunakan array `bilangan` untuk menyimpan bilangan yang dimasukkan pengguna. Setelah itu, program memasukkan bilangan-bilangan tersebut ke dalam array menggunakan loop. Kemudian, program memisahkan bilangan ganjil dan genap ke dalam dua array terpisah, yaitu `ganjil` dan `genap`. Untuk melakukannya, program menggunakan loop untuk memeriksa setiap bilangan dalam array `bilangan`. Jika bilangan tersebut genap, maka bilangan tersebut disimpan dalam array `genap`, dan jika bilangan tersebut ganjil, maka bilangan tersebut disimpan dalam array `ganjil`.  Terakhir, program menampilkan hasilnya.
+kode di atas sebuah program C++ yang meminta pengguna untuk memasukkan sejumlah bilangan, menyimpannya dalam sebuah array, dan kemudian memisahkan bilangan ganjil dan genap ke dalam dua array terpisah.Pertama-tama, program meminta pengguna untuk memasukkan jumlah bilangan yang akan dimasukkan. Kemudian, program menggunakan array `bilangan` untuk menyimpan bilangan yang dimasukkan pengguna. Setelah itu, program memasukkan bilangan-bilangan tersebut ke dalam array menggunakan loop. Kemudian, program memisahkan bilangan ganjil dan genap ke dalam dua array terpisah, yaitu `ganjil` dan `genap`. Untuk melakukannya, program menggunakan loop untuk memeriksa setiap bilangan dalam array `bilangan`. Jika bilangan tersebut genap, maka bilangan tersebut disimpan dalam array `genap`, dan jika bilangan tersebut ganjil, maka bilangan tersebut disimpan dalam array `ganjil`.  Terakhir, program menampilkan hasilnya.
 
-### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!!]
+### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga
+(soal-unguided2(b).png)
+(soal-unguided2(a).png)
 
 ```
 // UNGUIDED 2
