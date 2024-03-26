@@ -274,7 +274,6 @@ int main(){
 
 kode di atas adalah suatu kode untuk mengelola single linked list. Terdapat berbagai fungsi yang digunakan untuk mengelola single linked list, termasuk fungsi untuk menambahkan node (di depan, di tengah, di belakang), menghapus node (di depan, di tengah, di belakang, semua), mengubah node (di depan, di tengah, di belakang), menghitung jumlah node/list, dan menampilkan list. Pada awal program, terdapat struktur node yang digunakan untuk mendefinisikan sebuah node. Setiap node tersebut terdiri dari dua bagian memori yang berisi nilai yang disimpan dan pointer next. Selain itu, ada juga prosedur init yang digunakan untuk menginisialisasi head dan tail dengan nilai NULL, serta ada fungsi isEmpty yang digunakan untuk memeriksa apakah linked list kosong atau tidak. Pada bagian int main(), dilakukan beberapa operasi yang terkait dengan linked list, seperti menambahkan data, mengubah data, menghapus data, dan menampilkan data.
 
-#### Output:
 
 ## 2. [Latihan Double Lingked list]
 
@@ -431,7 +430,6 @@ int main(){
 ```
 Kode diatas adalah implementasi sederhana dari double linked list dalam bahasa C++. Dalam program tersebut, terdapat definisi dari kelas Node yang memiliki atribut data, pointer ke node sebelumnya (`prev`), dan pointer ke node berikutnya (`next`). Kelas DoubleLinkedList memiliki pointer `head` dan `tail` yang menunjukkan awal dan akhir dari linked list. Program ini juga menyediakan fungsi untuk menambah node di depan, menghapus node dari depan, mengubah data node, menghapus semua node, dan menampilkan isi dari linked list. Fungsi main digunakan untuk memberikan menu kepada pengguna untuk memilih operasi yang ingin dilakukan pada linked list, seperti menambah, menghapus, mengubah, menghapus semua, atau menampilkan isi linked list, dan terus berjalan sampai pengguna memilih untuk keluar dari program.
 
-#### Output:
 
 
 ## Unguided 
