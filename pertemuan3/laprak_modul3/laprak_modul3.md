@@ -1,10 +1,9 @@
 # <h1 align="center">Laporan Praktikum Modul Linked list</h1>
-<p align="center">Iqbal bawani</p>
+<p align="center">Iqbal bawani - 2311102130 </p>
  
 ## Dasar Teori
 
-
-linked list adalah suatu simpul (node) yang dikaitkan dengan simpul yang lain dalam suatu urutan tertentu. Suatu simpul dapat berbentuk suatu struktur atau class. Simpul harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Secara teori, linked list adalah sejumlah node yang dihubungkan secara linier dengan bantuan pointer. Elemen pada awal list (head) dan elemen pada akhir list (tail). Link list umumnya di bagi menjadi 2 macam seperti linked list single list dan linked list doble list. linked list merupakan sebuah struktur data yang digunakan untuk menyimpan sejumlah objek data biasanya secara terurut sehingga memungkinkan penambahan, pengurangan, dan pencarian atas elemen data yang tersimpan dalam senarai dilakukan secara lebih efektif.
+linked list adalah suatu simpul (node) yang dikaitkan dengan simpul yang lain dalam suatu urutan tertentu. Suatu simpul dapat berbentuk suatu struktur atau class. Simpul harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Secara teori, linked list adalah sejumlah node yang dihubungkan secara linier dengan bantuan pointer. Elemen pada awal list (head) dan elemen pada akhir list (tail). Link list umumnya di bagi menjadi 2 macam seperti linked list single list dan linked list doble list. Dikatakan single linked apabila hanya ada satu pointer yang menghubungkan setiap node single. linked list merupakan sebuah struktur data yang digunakan untuk menyimpan sejumlah objek data biasanya secara terurut sehingga memungkinkan penambahan, pengurangan, dan pencarian atas elemen data yang tersimpan dalam senarai dilakukan secara lebih efektif.
 
 1. single Link list
     Dalam operasi Single Linked List, umumnya dilakukan operasi penambahan dan penghapusan simpul pada awal atau akhir daftar, serta pencarian dan pengambilan nilai pada simpul tertentu dalam daftar. Karena struktur data ini hanya memerlukan satu pointer untuk setiap simpul, maka Single Linked List umumnya lebih efisien dalam penggunaan memori dibandingkan dengan jenis Linked List lainnya.
@@ -12,9 +11,7 @@ linked list adalah suatu simpul (node) yang dikaitkan dengan simpul yang lain da
     Double Linked List adalah struktur data Linked List yang mirip dengan Single Linked List, namun dengan tambahan satu pointer tambahan pada setiap simpul yaitu pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan untuk melakukan operasi penghapusan dan penambahan pada simpul mana saja secara efisien. Setiap simpul pada Double Linked List memiliki tiga elemen penting, yaitu elemen data (biasanya berupa nilai), pointer next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya.
 
 
-
 ## Guided 
-
 ### 1. [Latihan single linked list]
 
 ```
@@ -919,7 +916,7 @@ int main()
 Kode dia atas menggunakan struktur data Doubly Linked List untuk menyimpan data produk skincare beserta harganya. Pengguna dapat melakukan berbagai operasi seperti menambah, menghapus, mengupdate, dan menampilkan data produk. Selain itu, pengguna juga dapat menambahkan dan menghapus data pada posisi tertentu dalam linked list. Program memberikan pilihan menu interaktif kepada pengguna untuk melakukan operasi yang diinginkan, seperti menambah data, menghapus data, mengupdate data, menampilkan data, serta menghapus semua data. Ini memungkinkan pengguna untuk mengelola inventaris produk toko skincare dengan mudah dan efisien.
 
 ## Kesimpulan
-Kesimpulannya, Link list umumnya di bagi menjadi 2 macam seperti linked list single list dan linked list doble list. Baik linked list single maupun double merupakan struktur data yang fleksibel dan dapat digunakan untuk memecahkan banyak masalah. Pemilihan antara keduanya tergantung pada kebutuhan spesifik dan karakteristik dari aplikasi yang sedang dikembangkan.
+Kesimpulannya, Linked list merupakan sebuah struktur data yang digunakan untuk menyimpan sejumlah objek data biasanya secara terurut sehingga memungkinkan penambahan, pengurangan, dan pencarian atas elemen data yang tersimpan dalam senarai dilakukan secara lebih efektif. Linked list umumnya di bagi menjadi 2 macam seperti linked list single list dan linked list double list. Baik linked list single maupun double merupakan struktur data yang fleksibel dan dapat digunakan untuk memecahkan banyak masalah. Pemilihan antara keduanya tergantung pada kebutuhan spesifik dan karakteristik dari aplikasi yang sedang dikembangkan. 
 
 ## Referensi
 [1]SIREGAR, Anugrah Ananda Nauli. Pengertian Linked Object. 2019.
