@@ -435,7 +435,7 @@ Kode diatas adalah implementasi sederhana dari double linked list dalam bahasa C
 ## Unguided 
 
 ### 1. Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut: 
-![screenshot soal unguided 1](pertemuan3\laprak_modul3\soal-unguided1.png)
+![screenshot soal unguided 1](soal-unguided1.png)
 
 ```C++
 // UNGUIDED 2
@@ -564,13 +564,13 @@ int main() {
 
 ```
 #### Output:
-![screenshot output unguided1](\pertemuan3\laprak_modul3\output-unguided1.png)
+![screenshot output unguided1](output-unguided1.png)
 
 Kode di atas adalah implementasi dari linked list sederhana yang memanipulasi data berupa nama dan usia. Program ini terdiri dari fungsi-fungsi untuk memasukkan data ke depan, belakang, atau di tengah linked list, menghapus data, mengubah data, dan menampilkan seluruh data. Pada fungsi main(), data dimasukkan ke dalam linked list dengan menggunakan fungsi-fungsi yang telah didefinisikan, seperti insertDepan(), insertBelakang(), dan insertTengah(). Setelah itu, beberapa operasi lain dilakukan seperti penghapusan data dengan hapusData() dan pengubahan data dengan ubahData(). Akhirnya, fungsi tampilkanData() digunakan untuk menampilkan seluruh data yang ada dalam linked list. Program ini mengilustrasikan cara kerja dasar dari linked list dalam C++.
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga
-![screenshot soal unguided 2](\pertemuan3\laprak_modul3\soal-unguided2(b).png)
-![screenshot soal unguided 2](pertemuan3\laprak_modul3\soal-unguided2(a).png)
+![screenshot soal unguided 2](soal-unguided2(b).png)
+![screenshot soal unguided 2](soal-unguided2(a).png)
 
 ```
 // UNGUIDED 2
@@ -913,8 +913,8 @@ int main()
 ```
 #### Output:
 ![screenshot output unguided 2](output-unguided2a.png)
-![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2bpng.png)
-![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2c.png)
+![screenshot output unguided 2](output-unguided2bpng.png)
+![screenshot output unguided 2](output-unguided2c.png)
 
 Kode dia atas menggunakan struktur data Doubly Linked List untuk menyimpan data produk skincare beserta harganya. Pengguna dapat melakukan berbagai operasi seperti menambah, menghapus, mengupdate, dan menampilkan data produk. Selain itu, pengguna juga dapat menambahkan dan menghapus data pada posisi tertentu dalam linked list. Program memberikan pilihan menu interaktif kepada pengguna untuk melakukan operasi yang diinginkan, seperti menambah data, menghapus data, mengupdate data, menampilkan data, serta menghapus semua data. Ini memungkinkan pengguna untuk mengelola inventaris produk toko skincare dengan mudah dan efisien.
 
