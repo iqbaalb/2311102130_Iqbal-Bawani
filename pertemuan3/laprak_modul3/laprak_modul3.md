@@ -912,7 +912,7 @@ int main()
     }
 ```
 #### Output:
-![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2a.png)
+![screenshot output unguided 2](output-unguided2a.png)
 ![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2bpng.png)
 ![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2c.png)
 
