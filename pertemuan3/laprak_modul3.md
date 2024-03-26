@@ -275,7 +275,6 @@ int main(){
 kode di atas adalah suatu kode untuk mengelola single linked list. Terdapat berbagai fungsi yang digunakan untuk mengelola single linked list, termasuk fungsi untuk menambahkan node (di depan, di tengah, di belakang), menghapus node (di depan, di tengah, di belakang, semua), mengubah node (di depan, di tengah, di belakang), menghitung jumlah node/list, dan menampilkan list. Pada awal program, terdapat struktur node yang digunakan untuk mendefinisikan sebuah node. Setiap node tersebut terdiri dari dua bagian memori yang berisi nilai yang disimpan dan pointer next. Selain itu, ada juga prosedur init yang digunakan untuk menginisialisasi head dan tail dengan nilai NULL, serta ada fungsi isEmpty yang digunakan untuk memeriksa apakah linked list kosong atau tidak. Pada bagian int main(), dilakukan beberapa operasi yang terkait dengan linked list, seperti menambahkan data, mengubah data, menghapus data, dan menampilkan data.
 
 #### Output:
-![SS OUTPUT GUIDED1](Screenshot guided1.png)
 
 ## 2. [Latihan Double Lingked list]
 
@@ -433,12 +432,12 @@ int main(){
 Kode diatas adalah implementasi sederhana dari double linked list dalam bahasa C++. Dalam program tersebut, terdapat definisi dari kelas Node yang memiliki atribut data, pointer ke node sebelumnya (`prev`), dan pointer ke node berikutnya (`next`). Kelas DoubleLinkedList memiliki pointer `head` dan `tail` yang menunjukkan awal dan akhir dari linked list. Program ini juga menyediakan fungsi untuk menambah node di depan, menghapus node dari depan, mengubah data node, menghapus semua node, dan menampilkan isi dari linked list. Fungsi main digunakan untuk memberikan menu kepada pengguna untuk memilih operasi yang ingin dilakukan pada linked list, seperti menambah, menghapus, mengubah, menghapus semua, atau menampilkan isi linked list, dan terus berjalan sampai pengguna memilih untuk keluar dari program.
 
 #### Output:
-![SS OUTPUT GUIDED1](Screenshot guided2.png)
+
 
 ## Unguided 
 
 ### 1. Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut: 
-(pertemuan3\laprak_modul3\soal-unguided1.png)
+![screenshot soal unguided 1](pertemuan3\laprak_modul3\soal-unguided1.png)
 
 ```C++
 // UNGUIDED 2
@@ -567,13 +566,13 @@ int main() {
 
 ```
 #### Output:
-![screenshot output unguided1](C:\Users\PLN\Documents\tugas ittp s2\prakstrukkedua\2311102130_Iqbal-Bawani\pertemuan3\laprak_modul3\output-unguided1.png)
+![screenshot output unguided1](\pertemuan3\laprak_modul3\output-unguided1.png)
 
 Kode di atas adalah implementasi dari linked list sederhana yang memanipulasi data berupa nama dan usia. Program ini terdiri dari fungsi-fungsi untuk memasukkan data ke depan, belakang, atau di tengah linked list, menghapus data, mengubah data, dan menampilkan seluruh data. Pada fungsi main(), data dimasukkan ke dalam linked list dengan menggunakan fungsi-fungsi yang telah didefinisikan, seperti insertDepan(), insertBelakang(), dan insertTengah(). Setelah itu, beberapa operasi lain dilakukan seperti penghapusan data dengan hapusData() dan pengubahan data dengan ubahData(). Akhirnya, fungsi tampilkanData() digunakan untuk menampilkan seluruh data yang ada dalam linked list. Program ini mengilustrasikan cara kerja dasar dari linked list dalam C++.
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga
-(\pertemuan3\laprak_modul3\soal-unguided2(b).png)
-(pertemuan3\laprak_modul3\soal-unguided2(a).png)
+![screenshot soal unguided 2](\pertemuan3\laprak_modul3\soal-unguided2(b).png)
+![screenshot soal unguided 2](pertemuan3\laprak_modul3\soal-unguided2(a).png)
 
 ```
 // UNGUIDED 2
@@ -916,8 +915,8 @@ int main()
 ```
 #### Output:
 ![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2a.png)
-(pertemuan3\laprak_modul3\output-unguided2bpng.png)
-(pertemuan3\laprak_modul3\output-unguided2c.png)
+![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2bpng.png)
+![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2c.png)
 
 Kode dia atas menggunakan struktur data Doubly Linked List untuk menyimpan data produk skincare beserta harganya. Pengguna dapat melakukan berbagai operasi seperti menambah, menghapus, mengupdate, dan menampilkan data produk. Selain itu, pengguna juga dapat menambahkan dan menghapus data pada posisi tertentu dalam linked list. Program memberikan pilihan menu interaktif kepada pengguna untuk melakukan operasi yang diinginkan, seperti menambah data, menghapus data, mengupdate data, menampilkan data, serta menghapus semua data. Ini memungkinkan pengguna untuk mengelola inventaris produk toko skincare dengan mudah dan efisien.
 
@@ -926,4 +925,4 @@ Kesimpulannya, Link list umumnya di bagi menjadi 2 macam seperti linked list sin
 
 ## Referensi
 [1]SIREGAR, Anugrah Ananda Nauli. Pengertian Linked Object. 2019.
-[2]TRIASE, Triase. Struktur Data: Diktat Edisi Revisi. 2020.]
+[2]TRIASE, Triase. Struktur Data: Diktat Edisi Revisi. 2020.
