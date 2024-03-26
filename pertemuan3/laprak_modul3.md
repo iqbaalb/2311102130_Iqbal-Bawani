@@ -3,20 +3,14 @@
  
 ## Dasar Teori
 
- Pengertian array
-Array adalah suatu struktur yang terdiri dari sejumlah elemen yang memiliki tipe data yang sama. Elemen-elemen array tersusun secara sekuensial dalam memori komputer. Semua elemem array bertipe sama. Array cocok untuk organisasi kumpulan data homogen yang ukuran atau jumlah elemen maksimumnya telah diketahui dari awal.
-Array dibagi menjadi :        
-1. Array Satu Dimensi Array satu dimensi tidak lain adalah kumpulan elemen-elemen identik yang tersusun dalam satu baris, tetapi isi dari elemen tersebut boleh berbeda.  Dapat disebut juga dengan istilah vektor yang menggambarkan data dalam suatu urutanDeklarasi : Type_Data Nama_Variabel [index] Misalnya : int A[5];       
-2. Array Dua Dimensi Array dua dimensi yang sering digambarkan sebagai sebuah matriks merupakan perluasan dari sebuah array satu dimensi. Jika array satu dimensi hanya terdiri dari sebuah baris dengan beberapa kolom elemen maka array dua dimensi terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe sama. Pendeklarasian array dua dimensi hampir sama dengan pendeklarasian array satu dimensi, kecuali bahwa array dua dimensi terdapat dua jumlah elemen array yang terdapat di dalam kurung siku dan keduanya boleh tidak sama.Deklarasi : Type_Data Nama_Variabel [Index1] [index2]; Misal : int A[3][2];        
-3.  Array Tiga Dimensi           Array tiga dimensi digunakan untuk mengelola data dalam bentuk 3 dimensi atautiga sisi. Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3]; Misal : int A [3][4][2];        
-4.  Array Banyak DimensiSebenarnya array banyak dimensi ini tidak terlalu sering dipakai seperti halnyaarray satu dimensi, dua dimensi, dan tiga dimensi. Array banyak dimensi ini pada dasarnya sama dengan array sebelimnya kecuali pada jumlah dimensinya.Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3] [ndex4].....;Misal : int A [3][4][2][5]
 
-karakteristik array yaitu bersifat statis, mempunyai tipe data sama, dan dapat diakses secara acak.Penggunaan Array
-Pada dasarnya penggunaan array sangat luas tidak hanya digunakan pada bahasa pemrogaman. Contoh penggunaan array sebagai berikut :
+linked list adalah suatu simpul (node) yang dikaitkan dengan simpul yang lain dalam suatu urutan tertentu. Suatu simpul dapat berbentuk suatu struktur atau class. Simpul harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Secara teori, linked list adalah sejumlah node yang dihubungkan secara linier dengan bantuan pointer. Elemen pada awal list (head) dan elemen pada akhir list (tail). Link list umumnya di bagi menjadi 2 macam seperti linked list single list dan linked list doble list. linked list merupakan sebuah struktur data yang digunakan untuk menyimpan sejumlah objek data biasanya secara terurut sehingga memungkinkan penambahan, pengurangan, dan pencarian atas elemen data yang tersimpan dalam senarai dilakukan secara lebih efektif.
 
-Array digunakan untuk suatu database, contoh : tabel.
-Array digunakan untuk operasi matematika seperti vektor.
-Digunakan dalam bentuk struktur data lain, contohnya list.
+1. single Link list
+    Dalam operasi Single Linked List, umumnya dilakukan operasi penambahan dan penghapusan simpul pada awal atau akhir daftar, serta pencarian dan pengambilan nilai pada simpul tertentu dalam daftar. Karena struktur data ini hanya memerlukan satu pointer untuk setiap simpul, maka Single Linked List umumnya lebih efisien dalam penggunaan memori dibandingkan dengan jenis Linked List lainnya.
+2. Double Linked list
+    Double Linked List adalah struktur data Linked List yang mirip dengan Single Linked List, namun dengan tambahan satu pointer tambahan pada setiap simpul yaitu pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan untuk melakukan operasi penghapusan dan penambahan pada simpul mana saja secara efisien. Setiap simpul pada Double Linked List memiliki tiga elemen penting, yaitu elemen data (biasanya berupa nilai), pointer next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya.
+
 
 
 ## Guided 
@@ -444,7 +438,7 @@ Kode diatas adalah implementasi sederhana dari double linked list dalam bahasa C
 ## Unguided 
 
 ### 1. Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut: 
-(soal-unguided1.png)
+(pertemuan3\laprak_modul3\soal-unguided1.png)
 
 ```C++
 // UNGUIDED 2
@@ -573,13 +567,13 @@ int main() {
 
 ```
 #### Output:
-![screenshot output unguided1](Screenshot unguided1.png)
+![screenshot output unguided1](C:\Users\PLN\Documents\tugas ittp s2\prakstrukkedua\2311102130_Iqbal-Bawani\pertemuan3\laprak_modul3\output-unguided1.png)
 
-kode di atas sebuah program C++ yang meminta pengguna untuk memasukkan sejumlah bilangan, menyimpannya dalam sebuah array, dan kemudian memisahkan bilangan ganjil dan genap ke dalam dua array terpisah.Pertama-tama, program meminta pengguna untuk memasukkan jumlah bilangan yang akan dimasukkan. Kemudian, program menggunakan array `bilangan` untuk menyimpan bilangan yang dimasukkan pengguna. Setelah itu, program memasukkan bilangan-bilangan tersebut ke dalam array menggunakan loop. Kemudian, program memisahkan bilangan ganjil dan genap ke dalam dua array terpisah, yaitu `ganjil` dan `genap`. Untuk melakukannya, program menggunakan loop untuk memeriksa setiap bilangan dalam array `bilangan`. Jika bilangan tersebut genap, maka bilangan tersebut disimpan dalam array `genap`, dan jika bilangan tersebut ganjil, maka bilangan tersebut disimpan dalam array `ganjil`.  Terakhir, program menampilkan hasilnya.
+Kode di atas adalah implementasi dari linked list sederhana yang memanipulasi data berupa nama dan usia. Program ini terdiri dari fungsi-fungsi untuk memasukkan data ke depan, belakang, atau di tengah linked list, menghapus data, mengubah data, dan menampilkan seluruh data. Pada fungsi main(), data dimasukkan ke dalam linked list dengan menggunakan fungsi-fungsi yang telah didefinisikan, seperti insertDepan(), insertBelakang(), dan insertTengah(). Setelah itu, beberapa operasi lain dilakukan seperti penghapusan data dengan hapusData() dan pengubahan data dengan ubahData(). Akhirnya, fungsi tampilkanData() digunakan untuk menampilkan seluruh data yang ada dalam linked list. Program ini mengilustrasikan cara kerja dasar dari linked list dalam C++.
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga
-(soal-unguided2(b).png)
-(soal-unguided2(a).png)
+(\pertemuan3\laprak_modul3\soal-unguided2(b).png)
+(pertemuan3\laprak_modul3\soal-unguided2(a).png)
 
 ```
 // UNGUIDED 2
@@ -921,101 +915,15 @@ int main()
     }
 ```
 #### Output:
-![screenshot output unguided 2](Screenshot unguided2.png)
+![screenshot output unguided 2](pertemuan3\laprak_modul3\output-unguided2a.png)
+(pertemuan3\laprak_modul3\output-unguided2bpng.png)
+(pertemuan3\laprak_modul3\output-unguided2c.png)
 
-kode diatass sebuah program C++ yang mengizinkan pengguna untuk memasukkan ukuran tiga dimensi untuk sebuah array. Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen untuk setiap indeks dalam array tiga dimensi tersebut. Program meminta pengguna untuk memasukkan ukuran lapisan, baris, dan kolom untuk array tiga dimensi. Kemudian, program mendeklarasikan array `arr` dengan ukuran yang sesuai dengan input yang diberikan oleh pengguna. Setelah nya, program menggunakan tiga loop bersarang (nested loop) untuk memungkinkan pengguna memasukkan nilai untuk setiap elemen array. Loop pertama digunakan untuk mengakses setiap lapisan (indeks x), loop kedua untuk mengakses setiap baris (indeks y) dalam setiap lapisan, dan loop ketiga untuk mengakses setiap kolom (indeks z) dalam setiap baris.
-
-### 3. [ Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!!]
-
-```C++
-#include <iostream>
-using namespace std;
-
-// Fungsi untuk mencari nilai maksimum
-int max(int array[], int size, int& lokasi) {
-    int maks = array[0];
-    lokasi = 0;
-    for (int i = 1; i < size; ++i) {
-        if (array[i] > maks) {
-            maks = array[i];
-            lokasi = i;
-        }
-    }
-    return maks;
-}
-
-// Fungsi untuk mencari nilai minimum
-int minimum(int array[], int size, int& lokasi) {
-    int min = array[0];
-    lokasi = 0;
-    for (int i = 1; i < size; ++i) {
-        if (array[i] < min) {
-            min = array[i];
-            lokasi = i;
-        }
-    }
-    return min;
-}
-
-// Fungsi untuk mencari nilai rata-rata atau Average
-double rata2(int array[], int size) {
-    int total = 0;
-    for (int i = 0; i < size; ++i) {
-        total += array[i];
-    }
-    return static_cast<double>(total) / size;
-}
-
-int main() {
-    int iqbal;
-    cout << "Masukkan jumlah bilangan: ";
-    cin >> iqbal;
-    
-    int array[iqbal];
-    for (int i = 0; i < iqbal; ++i) {
-        cout << "Angka ke-" << i + 1 << ": ";
-        cin >> array[i];
-    }
-
-    int pilihan;
-    int lokasi;
-    do {
-        cout << "1. Mencari nilai maksimum"<< endl;;
-        cout << "2. Mencari nilai minimum" << endl ;
-        cout << "3. Mencari nilai rata-rata" << endl;
-        cout << "4. Keluar" << endl;
-        cout << "Pilih Nomor: ";
-        cin >> pilihan;
-
-        switch (pilihan) {
-            case 1:
-                cout << "Nilai maksimum adalah: " << max(array, iqbal, lokasi)  << endl;
-                break;
-            case 2:
-                cout << "Nilai minimum adalah: " << minimum(array, iqbal, lokasi) <<  endl;
-                break;
-            case 3:
-                cout << "Nilai rata-rata adalah: " << rata2(array, iqbal) << endl;
-                break;
-            case 4:
-                cout << "Program selesai." << endl;
-                break;
-            default:
-                cout << "Masukkan pilihan angka yang tersedia." << endl;
-        }
-    } while (pilihan != 4);
-
-    return 0;
-}
-
-```
-#### Output:
-![screenshot output unguided 3](Screenshot unguided3.png)
-
-kode diatas sebuah program C++ yang melakukan operasi-operasi dasar pada array, yaitu mencari nilai maksimum, minimum, dan rata-rata dari sejumlah angka yang dimasukkan pengguna.Program meminta pengguna untuk memasukkan panjang array (`iqbal`) yang akan dimasukkan. Kemudian, program akan menginisialisasi array dengan panjang yang dimasukkan pengguna dan meminta pengguna untuk memasukkan nilai-nilai array tersebut satu per satu. Program akan menampilkan menu operasi yang tersedia kepada pengguna, yaitu mencari nilai maksimum, minimum, atau rata-rata dari array yang telah dimasukkan, atau keluar dari program. Pengguna diminta untuk memilih nomor yang sesuai dengan operasi yang ingin dilakukan. Setelah pengguna memilih operasi, program akan menjalankan fungsi yang sesuai dengan pilihan pengguna. Fungsi `max()` akan mencari nilai maksimum dari array, `minimum()` akan mencari nilai minimum dari array, dan `rata2()` akan menghitung nilai rata-rata dari array. looop do while berguna agar program tak terhenti, progranm baru akan berhenti memilih pilhan 4.
+Kode dia atas menggunakan struktur data Doubly Linked List untuk menyimpan data produk skincare beserta harganya. Pengguna dapat melakukan berbagai operasi seperti menambah, menghapus, mengupdate, dan menampilkan data produk. Selain itu, pengguna juga dapat menambahkan dan menghapus data pada posisi tertentu dalam linked list. Program memberikan pilihan menu interaktif kepada pengguna untuk melakukan operasi yang diinginkan, seperti menambah data, menghapus data, mengupdate data, menampilkan data, serta menghapus semua data. Ini memungkinkan pengguna untuk mengelola inventaris produk toko skincare dengan mudah dan efisien.
 
 ## Kesimpulan
-Kesimpulan menunjukkan bagaimana array dapat digunakan dalam berbagai konteks, mulai dari memisahkan elemen array berdasarkan kondisi tertentu hingga melakukan operasi-operasi matematika sederhana. Array bisa digunakan untuk menyimpan bilangan-bilangan yang dimasukkan oleh pengguna, dan kemudian dilakukan pemisahan bilangan ganjil dan genap ke dalam dua array terpisah. Array tiga dimensi digunakan untuk menyimpan data dalam bentuk matriks tiga dimensi. Array juga digunakan untuk menyimpan data bilangan yang diinput oleh pengguna, kemudian dilakukan operasi-operasi tertentu seperti pencarian nilai maksimum, minimum, atau rata-rata dari bilangan-bilangan tersebu. Array adalah bagian dari struktur data yang terdapat dalam struktur data sederhana, yang dapat didefinisikan sebagai peta memori sementara di dalam komputer. Array bisa ada banyak dimensi, dan meiliki beberapa karakteristik seperti bersifat statis, mempunyai tipe data sama, dan dapat diakses secara acak.
+Kesimpulannya, Link list umumnya di bagi menjadi 2 macam seperti linked list single list dan linked list doble list. Baik linked list single maupun double merupakan struktur data yang fleksibel dan dapat digunakan untuk memecahkan banyak masalah. Pemilihan antara keduanya tergantung pada kebutuhan spesifik dan karakteristik dari aplikasi yang sedang dikembangkan.
 
 ## Referensi
-[1]PRATAMA, Muhammad Aldi. STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++. 2020.
+[1]SIREGAR, Anugrah Ananda Nauli. Pengertian Linked Object. 2019.
+[2]TRIASE, Triase. Struktur Data: Diktat Edisi Revisi. 2020.]

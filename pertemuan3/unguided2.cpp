@@ -207,7 +207,7 @@ int main()
 {
     DoublyLinkedList list;
 
-    cout << "\n== MENU TOKO SKINCARE PURWOKERTO BY RICO ADE PRATAMA ==" << endl;
+    cout << "\n== MENU TOKO SKINCARE PURWOKERTO  ==" << endl;
 
     // Inisialisasi data awal
     list.Push(30000, "Hanasui");
@@ -317,7 +317,7 @@ int main()
             }
 
             case 7: {
-                cout << "1TAMPILAN DATA PRODUK TOKO SKINCARE PURWOKERTO SEKARANG" << endl;
+                cout << "TAMPILAN DATA PRODUK TOKO SKINCARE PURWOKERTO SEKARANG" << endl;
                 list.Display(); 
                 break;
             }
