@@ -456,16 +456,7 @@ int main(){
 ![hapus ](outputhapus.png)
 #### Tampilan caridata melalu nim dan nilai
 ![caridata](outputcaridatanimdannilai.png)
-#### Ubah Data Idin
-![ubahdata](ubahidin.png)
-#### Ubah Data Lucy
-![ubahdata](ubahlucy.png)
-#### Ubah Bagas
-![ubahbagas](ubahbagas.png)
-#### Hapus data akhir
-![hapuslucy](hapusdatabelakang.png)
-#### Tampilkan seluruhnya
-![tampilanwwakhiru](outputakhir.png)
+
 
 
 Kode diatas adalah implementasi dari struktur data hash table dalam bahasa pemrograman C++. Hash table digunakan untuk menyimpan data mahasiswa, di mana setiap data mahasiswa direpresentasikan oleh sebuah struktur `Mahasiswa` yang memiliki atribut nama, NIM, dan nilai. Hash table ini menggunakan metode hashing untuk menempatkan data pada indeks yang sesuai dalam array `table`. Fungsi hash `hashFunc` menghasilkan indeks berdasarkan NIM mahasiswa dengan menjumlahkan nilai ASCII dari setiap karakter NIM dan kemudian melakukan operasi modulus dengan ukuran hash table. Variabel `TABLE_SIZE` menentukan ukuran hash table, dan array `table` berukuran `TABLE_SIZE` digunakan untuk menyimpan pointer ke node-node hash. Setiap node `HashNode` memiliki data mahasiswa (`Mahasiswa`), serta pointer ke node berikutnya dalam kasus terjadinya tabrakan (collision). Program ini menyediakan operasi dasar seperti penambahan data mahasiswa, pencarian berdasarkan NIM, pencarian berdasarkan rentang nilai, penghapusan data berdasarkan NIM, dan penampilan seluruh data mahasiswa. Dalam implementasi ini, variabel-variabel yang signifikan termasuk `TABLE_SIZE` yang menentukan ukuran hash table, array `table` yang menyimpan data-data mahasiswa, serta struktur data `Mahasiswa` yang merepresentasikan data mahasiswa. Metode hashing yang digunakan memungkinkan pencarian, penambahan, dan penghapusan data dengan kompleksitas waktu rata-rata O(1) dalam kasus terbaik, dengan asumsi tidak ada konflik hash yang signifikan.
