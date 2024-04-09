@@ -849,17 +849,7 @@ int main() {
 #### Hapus data akhir
 ![hapuslucy](hapusdatabelakang.png)
 #### Tampilkan seluruhnya
-![tampilanwwakhiru](pertemuan4\outputakhir.png)
-
-
-
-
-
-
-
-
-
-
+![tampilanwwakhiru](outputakhir.png)
 
 
 Kode diatas implementasi dari struktur data linked list non-circular, setiap node memiliki dua bagian utama: data dan pointer yang menunjuk ke node berikutnya. Kelas `LinkedList` memiliki fungsi-fungsi untuk mengelola linked list seperti menambah, mengubah, dan menghapus data, serta menampilkan seluruh data yang ada dalam linked list. Fungsi-fungsi tersebut diimplementasikan dengan memanipulasi pointer `head` yang menunjuk ke node pertama dalam linked list. Fungsi `tambahDepan()`, `tambahBelakang()`, dan `tambahTengah()` digunakan untuk menambahkan data ke dalam linked list, sedangkan fungsi `ubahDepan()`, `ubahBelakang()`, dan `ubahTengah()` digunakan untuk mengubah data dalam linked list. Selain itu, terdapat pula fungsi `hapusDepan()`, `hapusBelakang()`, dan `hapusTengah()` untuk menghapus data dari linked list, serta fungsi `tampilkanData()` untuk menampilkan seluruh data yang ada dalam linked list. `do-while` dalam fungsi `main()` untuk memberikan pengguna pilihan operasi yang ingin dilakukan pada linked list. Setiap pilihan operasi akan memanggil fungsi-fungsi yang sesuai dari objek `linkedList`. Pengguna dapat menambahkan data di depan, belakang, atau di tengah linked list, mengubah data di depan, belakang, atau di tengah linked list, menghapus data dari depan, belakang, atau di tengah linked list, serta menampilkan seluruh data yang ada dalam linked list. Program akan terus berjalan sampai pengguna memilih untuk keluar dari program dengan memilih opsi "0". Dengan demikian, program ini memberikan pengguna kemampuan untuk mengelola linked list non-circular secara dinamis sesuai dengan kebutuhan mereka.
