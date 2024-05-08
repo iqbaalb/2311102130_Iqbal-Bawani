@@ -234,7 +234,7 @@ int main() {
 ```
 ## output :
 
-![ss_unguided1](soalunguided1_laparak6.png)
+![ss_unguided1](ssoutpu_unguided1.png)
 
 Program kode  mengimplementasikan sebuah fungsi untuk mengecek apakah sebuah string merupakan palindrom atau tidak. Ini cukup berbeda dengan yang ada di guided, pada unguided ke 1 ini kita menggunakan objek stack dari library stack. Pertama, program mendefinisikan fungsi `Palindrom()` yang menerima sebuah string `Kata` sebagai parameter. Di dalam fungsi ini, sebuah objek stack dengan tipe `char` dibuat menggunakan library `<stack>` untuk menyimpan karakter-karakter dari setengah pertama string `Kata`. Setelah itu, program melakukan iterasi sepanjang setengah panjang string `Kata`, memasukkan setiap karakter dari setengah pertama ke dalam stack. Variabel `Mulai` dihitung sebagai setengah panjang `Kata`, dan jika panjang `Kata` ganjil, nilai `Mulai` ditambah 1 untuk memulai pengecekan dari karakter setelah setengah panjang.  Selanjutnya, program membandingkan setiap karakter dari setengah kedua string `Kata` dengan isi stack. Jika ada perbedaan, maka string `Kata` tidaklah palindrom. Namun, jika semua karakter cocok dengan karakter yang disimpan di stack, maka string `Kata` adalah palindrom. Pada bagian `main()` program, sebuah loop `do-while` digunakan untuk memungkinkan pengguna mengulangi program.
 
