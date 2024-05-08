@@ -223,7 +223,7 @@ int main() {
             cout << "Kalimat tersebut adalah : Bukan Palindrom" << endl;
         }
         // ulangi program
-        cout << "Ketik y untuk ulangi pprogram, atau n untuk menghentikan program : ";
+        cout << "Ketik y untuk ulangi program, atau n untuk menghentikan program : ";
         cin >> ulangi;
         cin.ignore(); // Membersihkan newline character dari input buffer
     } while (ulangi == 'y' ); // Melakukan perulangan selama pengguna ingin mencoba kalimat lain
