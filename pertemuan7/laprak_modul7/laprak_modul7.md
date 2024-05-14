@@ -8,25 +8,25 @@ Queue adalah struktur data yang digunakan untuk menyimpan data dengan metode FIF
 ![kONSEP Fifo](FIFO.png)
 
 Perbedaan antara stack dan queue terdapat pada aturan penambahan dan penghapusan elemen. Pada stack, operasi penambahan dan penghapusan elemen dilakukan di satu ujung. Elemen yang terakhir diinputkan akan berada paling dengan dengan ujung atau dianggap paling atas sehingga pada operasi penghapusan, elemen teratas tersebut akan dihapus paling awal, sifat demikian dikenal dengan LIFO. Pada Queue, operasi tersebut dilakukan ditempat berbeda (melalui salah satu ujung) karena perubahan data selalu mengacu pada Head, maka hanya ada 1 jenis insert maupun delete. Prosedur ini sering disebut Enqueue dan Dequeue pada kasus Queue. Untuk Enqueue, cukup tambahkan elemen setelah elemen terakhir Queue, dan untuk Dequeue, cukup "geser"kan Head menjadi elemen selanjutnya.
-Operasi pada Queue
--● enqueue() : menambahkan data ke dalam queue.
--● dequeue() : mengeluarkan data dari queue.
--● peek() : mengambil data dari queue tanpa menghapusnya.
--● isEmpty() : mengecek apakah queue kosong atau tidak.
--● isFull() : mengecek apakah queue penuh atau tidak.
+Operasi pada Queue<br>
+-● enqueue() : menambahkan data ke dalam queue.<br>
+-● dequeue() : mengeluarkan data dari queue.<br>
+-● peek() : mengambil data dari queue tanpa menghapusnya.<br>
+-● isEmpty() : mengecek apakah queue kosong atau tidak.<br>
+-● isFull() : mengecek apakah queue penuh atau tidak.<br>
 -● size() : menghitung jumlah elemen dalam queue.</br>
 
 Queue memiliki beberapa fungsi penting dalam pemrograman diantaranya:<br>
 
--a. Mengatur Urutan: Menjaga urutan tugas, yang pertama masuk adalah yang pertama keluar. Seperti antrian nyata.
--b. Penjadwalan: Membantu mengatur pekerjaan berdasarkan prioritas atau urutan, berguna saat banyak tugas.
--c. Buffering: Sementara menyimpan data cepat sebelum diproses lebih lanjut.
--d. Algoritma: Berguna dalam algoritma seperti BFS yang menjelajahi langkah demi langkah.
--e. Simulasi: Digunakan dalam model antrian di dunia nyata, contohnya pesawat atau antrian belanja.
--f. Pengelolaan Memori: Mengontrol penggunaan sumber daya seperti memori.
--g. Aplikasi Chat: Membantu mengatur pesan sebelum ditampilkan.
--h. Manajemen Proses: Mengatur proses yang akan dieksekusi oleh komputer.
--i. Sistem Antrian: Dipakai di bank, rumah sakit, dll., mengatur giliran pelanggan
+-a. Mengatur Urutan: Menjaga urutan tugas, yang pertama masuk adalah yang pertama keluar. Seperti antrian nyata.<br>
+-b. Penjadwalan: Membantu mengatur pekerjaan berdasarkan prioritas atau urutan, berguna saat banyak tugas.<br>
+-c. Buffering: Sementara menyimpan data cepat sebelum diproses lebih lanjut.<br>
+-d. Algoritma: Berguna dalam algoritma seperti BFS yang menjelajahi langkah demi langkah.<br>
+-e. Simulasi: Digunakan dalam model antrian di dunia nyata, contohnya pesawat atau antrian belanja.<br>
+-f. Pengelolaan Memori: Mengontrol penggunaan sumber daya seperti memori.<br>
+-g. Aplikasi Chat: Membantu mengatur pesan sebelum ditampilkan.<br>
+-h. Manajemen Proses: Mengatur proses yang akan dieksekusi oleh komputer.<br>
+-i. Sistem Antrian: Dipakai di bank, rumah sakit, dll., mengatur giliran pelanggan<br>
 
 
 
