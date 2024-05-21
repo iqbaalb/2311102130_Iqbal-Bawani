@@ -29,7 +29,7 @@ Misalkan, dari data di atas angka yang akan dicari adalah angka 7 dalam array A,
 ● Pada index ke-4 yaitu angka 7 dan ternyata angka 7 merupakan angka yang dicari, sehingga pencarian akan dihentikan dan proses selesai.</br>
 
 ## Binay search
-[1]Pencarian Bagi dua (Binary Search)</br>
+Pencarian Bagi dua (Binary Search)</br>
 Pencarian bagidua (binary search) adalah prosespencarian dengan membagi dua bagian data kemudian
 membandingkan isi data bagian pertama atau bagian kedua dengan data yang akan dicari. Pada metode ini
 membutuhkan nilai indeks terkecil dan terbesar untuk dijumlahkan kemudian dibagi dua. Pencarian bagi dua
