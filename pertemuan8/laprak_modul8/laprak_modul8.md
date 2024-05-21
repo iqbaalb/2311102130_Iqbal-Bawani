@@ -187,9 +187,7 @@ Kode Program ini mengimplementasikan pencarian biner (binary search) untuk menem
 
 ![ss_unguided1](outputunguided1.png)
 
-Program kode mengimplementasikan sebuah antrian dalam bentuk linked list, Berbeda dengan guided yang menggunakan arrray yang artinya setiap elemen di representasikansebagai simpul node yang terhubung satu sama lain. Setiap simpul (node) dalam linked list memiliki dua bagian data (dalam hal ini, string) dan pointer ke simpul berikutnya. Ketika elemen baru ditambahkan ke antrian (enqueue), simpul baru dibuat dan ditambahkan di belakang antrian. Ketika elemen dihapus dari antrian (dequeue), simpul di depan antrian dihapus. Fungsi enqueue(const string& data)untuk Menambahkan elemen baru ke dalam antrian, dequeue() untuk Menghapus elemen dari depan antrian.
-displayQueue()untuk Menampilkan seluruh elemen yang ada dalam antrian,  isEmpty() untuk Memeriksa apakah antrian kosong.
-countQueue()untuk Mengembalikan jumlah elemen dalam antrian, clearQueue() untuk Menghapus semua elemen dari antrian, sehingga membersihkannya.
+Program kode diatas implementasi pada algiritma searching, fungsi `binarysearch_130` dimulai dengan menginisialisasi tiga variabel: `awal`, `akhir`, dan `tengah`, serta sebuah flag `b_flag` yang digunakan untuk menandai apakah elemen yang dicari ditemukan. `awal` diset ke indeks pertama array (0), dan `akhir` diset ke indeks terakhir array (`size - 1`). Flag `b_flag` awalnya diset ke `false` untuk menunjukkan bahwa elemen yang dicari belum ditemukan. Proses pencarian dilakukan dalam sebuah loop yang berjalan selama `b_flag` bernilai `false` dan `awal` tidak melebihi `akhir`. Pada setiap iterasi loop, posisi tengah array dihitung sebagai `(awal + akhir) / 2`. Jika elemen di posisi tengah sama dengan elemen yang dicari, `b_flag` diset ke `true` untuk menunjukkan bahwa elemen telah ditemukan. Jika elemen di posisi tengah lebih kecil dari elemen yang dicari, `awal` diperbarui menjadi `tengah + 1`, karena elemen yang dicari pasti berada di sebelah kanan posisi tengah. Sebaliknya, jika elemen di posisi tengah lebih besar dari elemen yang dicari, `akhir` diperbarui menjadi `tengah - 1`, karena elemen yang dicari pasti berada di sebelah kiri posisi tengah. Loop ini terus berulang, mempersempit bagian array yang diperiksa hingga elemen ditemukan atau tidak ada lagi bagian array yang valid untuk diperiksa (`awal` menjadi lebih besar dari `akhir`). Setelah loop selesai, fungsi mengembalikan nilai `b_flag`, yang menunjukkan apakah elemen yang dicari ditemukan atau tidak. Dengan membagi array menjadi dua bagian pada setiap langkah.
 
 
 
@@ -197,6 +195,33 @@ countQueue()untuk Mengembalikan jumlah elemen dalam antrian, clearQueue() untuk 
 ### 2.  [Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!]
 
 ```C++
+//Iqbal Bawani
+//2311102130
+//S1IFF11D
+#include<iostream>    
+using namespace std;  
+
+int main() {
+    string kalimat;            // Deklarasi string untuk menyimpan kalimat yang diinput
+    int banyakvokal_130 = 0;       // Deklarasi dan inisialisasi variabel untuk menghitung jumlah huruf vokal
+
+    cout << "Masukkan kalimat: "; // Minta user untuk memasukkan kalimat
+    getline(cin, kalimat);        // Baca seluruh kalimat yang diinput user
+
+    for (int i = 0; i < kalimat.length(); i++) { // Loop untuk setiap karakter dalam kalimat
+        char huruf = tolower(kalimat[i]);        // Konversi karakter ke huruf kecil
+
+        // Cek apakah karakter adalah salah satu huruf vokal (a, i, u, e, o)
+        if (huruf == 'a' || huruf == 'i' || huruf == 'u' || huruf == 'e' || huruf == 'o') {
+            banyakvokal_130++;        // Jika ya, increment jumlah vokal
+        }
+    }
+
+    // Cetak jumlah huruf vokal yang ditemukan dalam kalimat
+    cout << "Jumlah huruf vokal dalam kalimat: " << banyakvokal_130 << endl;
+
+    return 0; // Kembalikan 0 untuk menandakan program selesai dengan sukses
+}
 
 
 ```
@@ -204,8 +229,8 @@ countQueue()untuk Mengembalikan jumlah elemen dalam antrian, clearQueue() untuk 
 
 ![ss_ungided2](outputunguided2.png)
 
- kode diatas adalaha kode program implementasi queue pada c++. Pada dasarnya kode unguided 2 merupakan kode unguided 1 dengan sedikit perubahan dan perbedaan. misalnya kode unguided ke 1 , setiap simpul (node) dalam linked list hanya menyimpan satu data, yaitu string.
-Pada unguided kedua, setiap simpul (node) menyimpan dua data, yaitu Nama dan NIM, keduanya bertipe string. Tentunya dengan beberapa hal berbeda akan menghasilkan output yang berbeda. Kode diatas akan menghasilkan output nama dan nim. Fungsi-fungsi utama seperti enqueue, dequeue, displayQueue, isEmpty, countQueue, dan clearQueue pada dasarnya sama antara kedua program. Namun, perbedaan terletak pada cara data Nama dan NIM diakses dan ditampilkan.
+
+Kode diatas adalah program sederhana yang menghitung jumlah huruf vokal dalam sebuah kalimat. Saya memilih menggunakan sequential search di banding binary search karena cukup mudah dan sederhana.  Pertama, program meminta pengguna untuk memasukkan sebuah kalimat. Setelah itu, kalimat tersebut dibaca oleh program menggunakan fungsi `getline()` dan disimpan dalam variabel string `kalimat`. Selanjutnya, program menggunakan sebuah loop `for` untuk mengiterasi melalui setiap karakter dalam kalimat. Setiap karakter dikonversi menjadi huruf kecil menggunakan fungsi `tolower()` agar pengecekan huruf vokal tidak bersifat case-sensitive. Selama iterasi, jika karakter yang sedang diperiksa merupakan salah satu huruf vokal ('a', 'i', 'u', 'e', 'o'), variabel `jumlahVocal` akan bertambah satu. Akhirnya, setelah loop selesai, program mencetak jumlah huruf vokal yang ditemukan dalam kalimat tersebut. Metode yang digunakan untuk mencari huruf vokal dalam kalimat adalah pencarian sekuensial, yang artinya setiap karakter diuji satu per satu dalam urutan yang ditemukan dalam kalimat. Meskipun sederhana, metode ini efektif untuk tugas ini karena mencari hanya beberapa karakter dalam sebuah string. Program kemudian mengembalikan nilai 0 untuk menandakan bahwa program telah selesai dengan sukses.
 
 
 
@@ -213,6 +238,37 @@ Pada unguided kedua, setiap simpul (node) menyimpan dua data, yaitu Nama dan NIM
 ### 3.  [Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!]
 
 ```C++
+//Iqbal Bawani
+//2311102130
+// S1IF11D
+#include <iostream> 
+using namespace std; 
+
+// Fungsi sequentialSearch_130 untuk mencari jumlah kemunculan target dalam array data
+int sequentialSearch_130(int data[], int n, int target) {
+    int hitung = 0; // Inisialisasi variabel count untuk menghitung jumlah kemunculan target
+    for (int i = 0; i < n; i++) { // Loop untuk setiap elemen dalam array data
+        if (data[i] == target) { // Jika elemen saat ini sama dengan target
+            hitung++; // Increment count
+        }
+    }
+    return hitung; // Mengembalikan jumlah kemunculan target dalam array data
+}
+
+int main() {
+    int data[] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4}; // Deklarasi dan inisialisasi array data
+    int a = sizeof(data) / sizeof(data[0]); // Hitung jumlah elemen dalam array data
+    int target = 4; // Target yang akan dicari dalam array data
+
+    // Panggil fungsi sequentialSearch untuk mencari jumlah kemunculan target dalam array data
+    int hitung = sequentialSearch_130(data, a, target);
+
+    // Cetak hasil pencarian
+    cout << "Pada data: 9, 4, 1, 4, 7, 10, 5, 4, 12, 4" << endl;
+    cout << "Banyak angka 4 di dalam data adalah: " << hitung << endl;
+
+    return 0; // Kembalikan 0 untuk menandakan program selesai dengan sukses
+}
 
 
 ```
@@ -220,13 +276,15 @@ Pada unguided kedua, setiap simpul (node) menyimpan dua data, yaitu Nama dan NIM
 
 ![ss_ungided3](outputunguided3.png)
 
- kode diatas adalaha kode program implementasi queue pada c++. Pada dasarnya kode unguided 2 merupakan kode unguided 1 dengan sedikit perubahan dan perbedaan. misalnya kode unguided ke 1 , setiap simpul (node) dalam linked list hanya menyimpan satu data, yaitu string.
-Pada unguided kedua, setiap simpul (node) menyimpan dua data, yaitu Nama dan NIM, keduanya bertipe string. Tentunya dengan beberapa hal berbeda akan menghasilkan output yang berbeda. Kode diatas akan menghasilkan output nama dan nim. Fungsi-fungsi utama seperti enqueue, dequeue, displayQueue, isEmpty, countQueue, dan clearQueue pada dasarnya sama antara kedua program. Namun, perbedaan terletak pada cara data Nama dan NIM diakses dan ditampilkan.
 
-
+kode program diatas ii mplementasi sequential search. program ini mencari jumlah kemunculan angka target (dalam kasus ini, angka 4) dalam array data yang diberikan.Fungsi sequentialSearch menerima tiga parameter: array data, ukuran array, dan target yang dicari.
+Dalam fungsi sequentialSearch, loop for digunakan untuk iterasi melalui setiap elemen dalam array data Setiap elemen dicek, dan jika sama dengan target, variabel count bertambah satu. Fungsi sequentialSearch mengembalikan jumlah kemunculan target dalam array data.
+Dalam main, array data, ukurannya, dan target yang dicari diinisialisasi. Fungsi sequentialSearch dipanggil dengan parameter yang sesuai, dan hasilnya disimpan dalam variabel count. Hasil pencarian, yaitu jumlah kemunculan angka 4 dalam array data, dicetak ke layar.
 
 ## Kesimpulan
-Kesimpulannya, Queue memiliki karakter yang berbeda dengan stack, stack mimliki karakter last in first out sedangkan queue memiliki karakter first ini first out  yang artinya yang pertama masuk maka yang pertama juga keluarnya. Queue bisa di kombinasikan dengan array maupun linked list. Queue bersifat seperti antrian 
+Kesimpulannya,</br>
+Sequential search adalah metode pencarian sederhana yang memeriksa setiap elemen dalam sebuah daftar secara berurutan hingga elemen yang dicari ditemukan atau daftar berakhir. Mudah diimplementasikan karena cenderung sederhana dan tidak memerlukan kondisi awal khusus(sangat cocok dengan array)Kegunaannya efektif untuk daftar kecil atau ketika elemen yang dicari mungkin ada beberapa kali dalam daftar.</br>
+Binary search adalah metode pencarian yang lebih efisien untuk daftar yang sudah diurutkan. Metode ini membagi daftar menjadi dua bagian dan membandingkan elemen tengah dengan elemen yang dicari. Jika elemen tengah bukan elemen yang dicari, proses berlanjut di subdaftar yang relevan. Implementasinya Sedikit lebih kompleks dibandingkan sequential search dan memerlukan daftar yang sudah diurutkan.Kegunaannya Sangat efektif untuk daftar besar yang sudah diurutkan.
 
 ## Referensi
 [1]RIYANTO, Joko, et al. ALGORITMA DAN PEMROGRAMAN 2. 2022..</br>

@@ -1,43 +1,49 @@
+//Iqbal Bawani
+//2311102130
+//S1IF11D
+
 #include <iostream>
-#include <conio.h>
+#include <conio.h>// UNTUK FUNGSI _getch()
 #include <iomanip>
 
 using namespace std;
 
+// Fungsi untuk melakukan selection sort pada array karakter
 void selectionsort_130(char dataarray[], int size) {
-    int temp, min, i, j;
-    for (i = 0; i < size - 1; i++) {
-        min = i;
-        for (j = i + 1; j < size; j++) {
-            if (dataarray[j] < dataarray[min]) {
-                min = j;
+    int temp, min, i, j; // Deklarasi variabel
+    for (i = 0; i < size - 1; i++) { // Loop untuk setiap elemen array
+        min = i; // Set elemen pertama sebagai minimum
+        for (j = i + 1; j < size; j++) { // Loop untuk elemen-elemen berikutnya
+            if (dataarray[j] < dataarray[min]) { // Jika elemen j lebih kecil dari elemen min
+                min = j; // Set elemen j sebagai minimum
             }
         }
-        // Tukar elemen
-        temp = dataarray[i];
-        dataarray[i] = dataarray[min];
-        dataarray[min] = temp;
+        // Tukar elemen minimum dengan elemen pertama dari bagian yang belum terurut
+        temp = dataarray[i]; // Simpan nilai elemen i di temp
+        dataarray[i] = dataarray[min]; // Pindahkan elemen min ke posisi i
+        dataarray[min] = temp; // Pindahkan nilai temp ke posisi min
     }
 }
 
 bool binarysearch_130(char dataarray[], int size, char cari) {
-    int awal, akhir, tengah;
-    bool b_flag = false;
-    awal = 0;
-    akhir = size - 1;
+    int awal, akhir, tengah; // Deklarasi variabel untuk awal, akhir, dan tengah array
+    bool b_flag = false; // Flag untuk menandai apakah elemen ditemukan
+    awal = 0; // Inisialisasi awal array
+    akhir = size - 1; // Inisialisasi akhir array
 
-    while (!b_flag && awal <= akhir) {
-        tengah = (awal + akhir) / 2;
-        if (dataarray[tengah] == cari) {
-            b_flag = true;
-        } else if (dataarray[tengah] < cari) {
-            awal = tengah + 1;
-        } else {
-            akhir = tengah - 1;
+    while (!b_flag && awal <= akhir) { // Loop selama elemen belum ditemukan dan bagian array yang diperiksa valid
+        tengah = (awal + akhir) / 2; // Hitung posisi tengah
+        if (dataarray[tengah] == cari) { // Jika elemen di tengah adalah elemen yang dicari
+            b_flag = true; // Set flag menjadi true untuk menunjukkan elemen ditemukan
+        } else if (dataarray[tengah] < cari) { // Jika elemen di tengah lebih kecil dari elemen yang dicari
+            awal = tengah + 1; // Pindahkan awal ke sebelah kanan tengah karena elemen yang dicari pasti ada di sebelah kanan
+        } else { // Jika elemen di tengah lebih besar dari elemen yang dicari
+            akhir = tengah - 1; // Pindahkan akhir ke sebelah kiri tengah karena elemen yang dicari pasti ada di sebelah kiri
         }
     }
-    return b_flag;
+    return b_flag; // Kembalikan hasil pencarian (true jika ditemukan, false jika tidak)
 }
+
 
 int main() {
     string kalimat;
