@@ -18,7 +18,7 @@ Graph tak berarah adalah jenis graph di mana setiap sisi (edge) tidak memiliki a
 
 3. Graph Berbobot (Weight Graph)
 Graph berbobot adalah jenis graph yang memiliki bobot pada setiap sisinya. Bobot sebuah busur dapat menyatakan panjang sebuah jalan dari 2 buah titik, jumlah rata-rata kendaraan perhari yang melalui sebuah jalan, dll. Berikut contoh graph berbobot.
-![ss_contohgraphberbobot](zgraphberbobot.png)
+![ss_contohgraphberbobot](zgraphberbobot.jpg)
 
 Representasi graph menggunakan linked list adalah metode untuk menyimpan graph yang menghubungkan simpul-simpulnya melalui daftar terhubung, di mana setiap sisi graf memiliki bobot yang terkait. Berikut contoh representasi graph menggunakan linked list.
 [ss_contohgraphlinkedlist](zgraphdanlinkedlist.png)
@@ -49,7 +49,43 @@ Sesuai dengan namanya, Binary search tree digunakan untuk berbagai algoritma pen
 ## Guided 
 ### 1. [Program Graph]
 ```C++
+#include <iostream>
+#include <iomanip>
 
+using namespace std;
+
+string simpul[7] ={
+    "ciamis", "Bandung", "sBekasi", "Tasikmalaya", 
+    "Cianjur", "Purwokerto", "Yogyakarta"
+};
+
+int busur [7][7] = {
+    {0, 7, 8, 0, 0, 0, 0},
+    {0, 0, 5, 0, 0, 15, 0},
+    {0, 6, 0, 0, 5, 0, 0},
+    {0, 5, 0, 0, 2, 4, 0},
+    {23, 0, 0, 10, 0, 0, 8},
+    {0, 0, 0, 0, 7, 0, 3},
+    {0, 0, 0, 0, 9, 4, 0},
+};
+void tampilGraph(){
+    for(int baris=0; baris <7; baris++){
+        cout << " " << setiosflags(ios::left)<<
+        setw(15)<< simpul[baris]<< " : " ;
+        for (int kolom=0; kolom<7; kolom ++){
+            if (busur[baris] [kolom]!=0){
+                cout <<" " << simpul[kolom]<< " ( " << 
+                busur[baris][kolom] << " ) ";
+            }
+        }cout << endl;
+    }
+}
+
+
+int main(){
+    tampilGraph();
+    return 0;
+}
 ```
 ## output 
 ![ss_guided](output_guided1.png)
@@ -60,6 +96,379 @@ Kode di atas mendefinisikan dan menampilkan representasi graf berbobot menggunak
 ### 2. [Program Tree]
 ```C++
 
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+struct Pohon
+{
+    char data;
+    Pohon *left, *right, *parent;
+};
+Pohon *root, *baru;
+void init()
+{
+    root = NULL;
+}
+bool isEmpty()
+{
+    return root == NULL;
+}
+void buatNode(char data)
+{
+    if (isEmpty())
+    {
+        root = new Pohon();
+        root->data = data;
+        root->left = NULL;
+        root->right = NULL;
+        root->parent = NULL;
+        cout << "\n Node " << data << " berhasil dibuat sebagai root."
+             << endl;
+    }
+    else
+    {
+        cout << "\n Tree sudah ada!" << endl;
+    }
+}
+Pohon *insertLeft(char data, Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+        return NULL;
+    }
+    else
+    {
+        if (node->left != NULL)
+        {
+            cout << "\n Node " << node->data << " sudah ada child  kiri!" << endl;
+            return NULL;
+        }
+        else
+        {
+            Pohon *baru = new Pohon();
+            baru->data = data;
+            baru->left = NULL;
+            baru->right = NULL;
+            baru->parent = node;
+            node->left = baru;
+            cout << "\n Node " << data << " berhasil ditambahkan ke  child kiri " << baru->parent->data << endl;
+            return baru;
+        }
+    }
+}
+Pohon *insertRight(char data, Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+        return NULL;
+    }
+    else
+    {
+        if (node->right != NULL)
+        {
+            cout << "\n Node " << node->data << " sudah ada child kanan !" << endl;
+                return NULL;
+        }
+        else
+        {
+            Pohon *baru = new Pohon();
+            baru->data = data;
+            baru->left = NULL;
+            baru->right = NULL;
+            baru->parent = node;
+            node->right = baru;
+            cout << "\n Node " << data << " berhasil ditambahkan ke child kanan " << baru->parent->data << endl;
+                return baru;
+        }
+    }
+}
+void update(char data, Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (!node)
+        {
+            cout << "\n Node yang ingin diganti tidak ada!!" << endl;
+        }
+        else
+        {
+            char temp = node->data;
+            node->data = data;
+                    cout
+                << "\n Node " << temp << " berhasil diubah menjadi "
+                << data << endl;
+        }
+    }
+}
+void retrieve(Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (!node)
+        {
+            cout << "\n Node yang ditunjuk tidak ada!" << endl;
+        }
+        else
+        {
+            cout << "\n Data node : " << node->data << endl;
+        }
+    }
+}
+void find(Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (!node)
+        {
+            cout << "\n Node yang ditunjuk tidak ada!" << endl;
+        }
+        else
+        {
+            cout << "\n Data Node : " << node->data << endl;
+            cout << " Root : " << root->data << endl;
+            if (!node->parent)
+                cout << " Parent : (tidak punya parent)" << endl;
+            else
+                cout << " Parent : " << node->parent->data << endl;
+            if (node->parent != NULL && node->parent->left != node &&
+                node->parent->right == node)
+                cout << " Sibling : " << node->parent->left->data << endl;
+            else if (node->parent != NULL && node->parent->right != node && node->parent->left == node)
+                cout << " Sibling : " << node->parent->right->data << endl;
+            else
+                cout << " Sibling : (tidak punya sibling)" << endl;
+            if (!node->left)
+                cout << " Child Kiri : (tidak punya Child kiri)" << endl;
+            else
+                cout << " Child Kiri : " << node->left->data << endl;
+            if (!node->right)
+                cout << " Child Kanan : (tidak punya Child kanan)" << endl;
+            else
+                cout << " Child Kanan : " << node->right->data << endl;
+        }
+    }
+}
+// Penelusuran (Traversal)
+// preOrder
+void preOrder(Pohon *node = root)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (node != NULL)
+        {
+            cout << " " << node->data << ", ";
+            preOrder(node->left);
+            preOrder(node->right);
+        }
+    }
+}
+// inOrder
+void inOrder(Pohon *node = root)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (node != NULL)
+        {
+            inOrder(node->left);
+            cout << " " << node->data << ", ";
+            inOrder(node->right);
+        }
+    }
+}
+// postOrder
+void postOrder(Pohon *node = root)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (node != NULL)
+        {
+            postOrder(node->left);
+            postOrder(node->right);
+            cout << " " << node->data << ", ";
+        }
+    }
+}
+// Hapus Node Tree
+void deleteTree(Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        if (node != NULL)
+        {
+            if (node != root)
+            {
+                node->parent->left = NULL;
+                node->parent->right = NULL;
+            }
+            deleteTree(node->left);
+            deleteTree(node->right);
+            if (node == root)
+            {
+                delete root;
+                root = NULL;
+            }
+            else
+            {
+                delete node;
+            }
+        }
+    }
+}
+// Hapus SubTree
+void deleteSub(Pohon *node)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+    }
+    else
+    {
+        deleteTree(node->left);
+        deleteTree(node->right);
+        cout << "\n Node subtree " << node->data << " berhasi dihapus." << endl;
+    }
+}
+// Hapus Tree
+void clear()
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!!" << endl;
+    }
+    else
+    {
+        deleteTree(root);
+        cout << "\n Pohon berhasil dihapus." << endl;
+    }
+}
+// Cek Size Tree
+int size(Pohon *node = root)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!!" << endl;
+        return 0;
+    }
+    else
+    {
+        if (!node)
+        {
+            return 0;
+        }
+        else
+        {
+            return 1 + size(node->left) + size(node->right);
+        }
+    }
+}
+// Cek Height Level Tree
+int height(Pohon *node = root)
+{
+    if (isEmpty())
+    {
+        cout << "\n Buat tree terlebih dahulu!" << endl;
+        return 0;
+    }
+    else
+    {
+        if (!node)
+        {
+            return 0;
+        }
+        else
+        {
+            int heightKiri = height(node->left);
+            int heightKanan = height(node->right);
+            if (heightKiri >= heightKanan)
+            {
+                return heightKiri + 1;
+            }
+            else
+            {
+                return heightKanan + 1;
+            }
+        }
+    }
+}
+// Karakteristik Tree
+void characteristic()
+{
+    cout << "\n Size Tree : " << size() << endl;
+    cout << " Height Tree : " << height() << endl;
+    cout << " Average Node of Tree : " << size() / height() << endl;
+}
+int main()
+{
+
+    buatNode('A');
+
+    Pohon *nodeB, *nodeC, *nodeD, *nodeE, *nodeF, *nodeG, *nodeH, *nodeI, *nodeJ;
+
+    nodeB = insertLeft('B', root); 
+    nodeC = insertRight('C', root); 
+    nodeD = insertLeft('D', nodeB); 
+    nodeE = insertRight('E', nodeB); 
+    nodeF = insertLeft('F', nodeC); 
+    nodeG = insertLeft('G', nodeE); 
+    nodeH = insertRight('H', nodeE); 
+    nodeI = insertLeft('I', nodeG); 
+    nodeJ = insertRight('J', nodeG); 
+
+    update('Z', nodeC); 
+    update('C', nodeC); 
+    retrieve(nodeC); 
+    find(nodeC); 
+
+    cout << "\nSize Tree: " << size() << endl; 
+    cout << "Height Tree: " << height() << endl; 
+    cout << "Average Node of Tree : " << (float)size() / height() << endl;
+
+    cout << "\nPreOrder:\n";
+    preOrder();
+    cout << endl;
+
+    cout << "\nInOrder:\n";
+    inOrder(); 
+    cout << endl;
+
+    cout << "\nPostOrder:\n";
+    postOrder(); 
+    cout << endl;
+
+
+    return 0;
+}
 ```
 ## output 
 ![ss_guided](output_guided2(1).png)
@@ -150,7 +559,7 @@ Program kode diatas implementasi untuk menghitung dan menampilkan jarak antar ko
 
 
 ## Unguided 2
-### 2.  []
+### 2.  [Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan descendant dari node yang diinput kan!]
 
 ```C++
 #include<iostream>
@@ -733,7 +1142,7 @@ int main() {
 ```
 ### Output:
 ## buat akar node 
-![ss_ungided2](outputunguided2.png)
+![ss_ungided2](outputunguided2_buatnode.png)
 ## tambah child kiri dan kanan 
 ![ss_ungided2](outputunguided2_tambahkiriB.png)
 ![ss_ungided2](outputunguided2_tambahkananC.png)
