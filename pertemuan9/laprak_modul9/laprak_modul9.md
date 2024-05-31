@@ -10,7 +10,7 @@ Terdapat beberapa jenis graph, antara lain sebagai berikut</br>
 
 1. Graph Berarah (Directed Graph)
 Graph berarah adalah jenis graph di mana setiap sisi (edge) memiliki arah tertentu. Dalam graf berarah, sisi-sisi tersebut disebut panah (arc), yang menghubungkan sepasang simpul (vertex) dengan urutan tertentu, sehingga setiap urutan simpul mempunyai arti tersendiri. Berikut merupakan contoh graph berarah.
-[ss_contohgraphberarah](pertemuan9\laprak_modul9\zgraphberarah.png)
+[ss_contohgraphberarah](\zgraphberarah.png)
 
 2. Graph Tak Berarah (Undirected Graph)
 Graph tak berarah adalah jenis graph di mana setiap sisi (edge) tidak memiliki arah tertentu. Pada graph tak berarah, urutan simpul dalam sebuah busur tidak dipentingkan. Berikut merupakan contoh graph tak berarah.
