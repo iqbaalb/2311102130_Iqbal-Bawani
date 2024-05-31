@@ -10,7 +10,7 @@ Terdapat beberapa jenis graph, antara lain sebagai berikut</br>
 
 1. Graph Berarah (Directed Graph)
 Graph berarah adalah jenis graph di mana setiap sisi (edge) memiliki arah tertentu. Dalam graf berarah, sisi-sisi tersebut disebut panah (arc), yang menghubungkan sepasang simpul (vertex) dengan urutan tertentu, sehingga setiap urutan simpul mempunyai arti tersendiri. Berikut merupakan contoh graph berarah.
-[ss_contohgraphberarah](zgraphberarah.png)
+![ss_contohgraphberarah](zgraphberarah.png)
 
 2. Graph Tak Berarah (Undirected Graph)
 Graph tak berarah adalah jenis graph di mana setiap sisi (edge) tidak memiliki arah tertentu. Pada graph tak berarah, urutan simpul dalam sebuah busur tidak dipentingkan. Berikut merupakan contoh graph tak berarah.
@@ -21,12 +21,12 @@ Graph berbobot adalah jenis graph yang memiliki bobot pada setiap sisinya. Bobot
 ![ss_contohgraphberbobot](zgraphberbobot.jpg)
 
 Representasi graph menggunakan linked list adalah metode untuk menyimpan graph yang menghubungkan simpul-simpulnya melalui daftar terhubung, di mana setiap sisi graf memiliki bobot yang terkait. Berikut contoh representasi graph menggunakan linked list.
-[ss_contohgraphlinkedlist](zgraphdanlinkedlist.png)
-[ss_contohgraphlinkedlist](zgraphdanlinkedlist2.png)
+![ss_contohgraphlinkedlist](zgraphdanlinkedlist.png)
+![ss_contohgraphlinkedlist](zgraphdanlinkedlist2.png)
 
 ### TREE
 Pohon (tree) merupakan salah satu bentuk khusus dari struktur suatu graf. Misalkan A merupakan sebuah himpunan berhingga simpul (vertex) pada suatu graf G yang terhubung. Untuk setiap pasangan simpul di A dapat ditentukan suatu lintasan yang menghubungkan pasangan simpul tersebut. Suatu graf terhubung yang setiap pasangan simpulnya hanya dapat dihubungkan oleh suatu lintasan tertentu, maka graf tersebut dinamakan pohon (tree). Dengan kata lain, pohon (tree) merupakan graf tak-berarah yang terhubung dan tidak memiliki sirkuit. Contoh Tree
-[ss_contohtree](zcontohtree.png)
+![ss_contohtree](zcontohtree.png)
 
 Jenis-Jenis Tree
 Struktur data tree dapat diklasifikasikan ke dalam 4 jenis, yaitu:
@@ -480,7 +480,7 @@ Kode di atas mendefinisikan struktur data pohon biner menggunakan kelas `Pohon` 
 
 ## Unguided 1
 ### 1.  [ Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya]
-[ss_soal1](zsoal_unguided1.png)
+![ss_soal1](zsoal_unguided1.png)
 ```C++
 
 // IQBAL BAWANI
